@@ -359,7 +359,7 @@ lex(val_t* val, int next)
                     token[tpos] = 0;
                     state = read_start;
                     val->type = TYPE_VARIABLE;
-                    strcpy( val->d.variable, token);
+                    strcpy( val->d.variable, token);  /* Yes. I know this is an unsafe approach.  Don't integrate it into your Internet-facing app. */
                     done = 1;
                     goto done;
                }
