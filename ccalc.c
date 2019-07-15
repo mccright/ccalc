@@ -87,7 +87,7 @@ map_find( const char* var )
 {
     MapEntry_t* cur = varmap;
     while( cur ) {
-        if ( strcmp( var, cur->name ) == 0 ) {
+        if ( strcmp( var, cur->name ) == 0 ) { /* String termination error risks related to the eariler strcpy() */
             return cur;
         }
         cur = cur->next;
