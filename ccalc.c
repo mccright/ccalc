@@ -101,7 +101,7 @@ map_add( const char* var, double value )
 {
     MapEntry_t* entry = map_find( var );
     if ( entry == 0 ) {
-        entry = (MapEntry_t*)malloc( sizeof(MapEntry_t) );
+        entry = (MapEntry_t*)malloc( sizeof(MapEntry_t) ); /* Missing Check against Null */
         strncpy( entry->name, var, VAR_NAME_SIZE + 1 );
         entry->name[VAR_NAME_SIZE] = 0;
         entry->next = varmap;
