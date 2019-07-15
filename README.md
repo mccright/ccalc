@@ -6,6 +6,7 @@ This is a simple command line calculator to save you the clicks or keystrokes re
 
 For example;  
 
-```F:\>ccalc 100/(412117/78221)  
+```
+F:\>ccalc 100/(412117/78221)  
 18.980290  
 ``` 
