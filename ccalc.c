@@ -5,7 +5,7 @@
     http://stevehanov.ca/blog/?id=26
     and on 20 June 2019 the code was at: http://stevehanov.ca/blog/calc.c 
     steve.hanov@gmail.com
-    …with edits from Matt McCright to reduce outputs.
+    NOTE: This version includes edits from Matt McCright to reduce outputs.
     Compile with:    
     Unix:
         gcc -o calc -lm calc.c
